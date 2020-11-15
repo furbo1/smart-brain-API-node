@@ -21,7 +21,7 @@ const handleRegister = (req, res, db, bcrypt) => {
                         joined: new Date()
                     })
                     .then(user => {
-                        console.log(hash)
+                        
                         res.json(user[0]);
                     })
             })
