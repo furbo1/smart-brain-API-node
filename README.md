@@ -1,5 +1,6 @@
 View/Test it here: [Smart Brain Demo](https://smart-brain-app-fend.herokuapp.com/).
 
+
 Technologies Used:
 
 Front-End
@@ -7,6 +8,7 @@ Front-End
     HTML5
     CSS3
     React.js
+[Front End Repository](https://github.com/furbo1/smart-brain-app-fend)
 
 Back-End
 
