@@ -11,22 +11,15 @@ const image = require('./controllers/image');
 
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0; 
 
-// DB='d81fb98csb0li1'
-// DB_USERNAME='jxkiayzrrypxkj'
-// DB_PASSWORD='936bcf48a26fec29c65db7d40e7d8122d9027a62a2732b9dfcb5fb7514eda734'
-// HOST='ec2-54-159-107-189.compute-1.amazonaws.com'
 
 const db = knex({
     client: 'pg',
     connection: {
-        // connectionString: process.env.DATABASE_URL,
+        connectionString: process.env.DATABASE_URL,
         ssl: {
             rejectUnauthorized: false
           },
-          host: 'ec2-54-159-107-189.compute-1.amazonaws.com',
-          database: 'd81fb98csb0li1',
-          user: 'jxkiayzrrypxkj',
-        password: '936bcf48a26fec29c65db7d40e7d8122d9027a62a2732b9dfcb5fb7514eda734',
+        
             
     },
     debug: true

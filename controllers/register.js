@@ -3,6 +3,10 @@ const handleRegister = (req, res, db, bcrypt) => {
     if (!email || !name || !password) {
         return res.status(400).json('Incorrect form submission.');
     }
+
+
+    INSERT INTO login(email,hash) VALUES('al2@gmail.com', '$2y$10$tT4mJXfdDK9TgDC/m/a9E.d2UiBV1iMu/O5pcHrpsLlgU/Tv799Mq')
+
     const saltRounds = 10;
     const hash = bcrypt.hashSync(password, saltRounds);
     db.transaction(trx => {
